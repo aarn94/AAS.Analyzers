@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageId>AAS.Analyzers</PackageId>
+        <Description>Coding rules</Description>
+        <Version>1.0.0</Version>
+        <LangVersion>latest</LangVersion>
+        <DebugType>Portable</DebugType>
+        <IncludeSource>True</IncludeSource>
+        <IsPackable>True</IsPackable>
+        <Authors>Adrian Adamiak</Authors>
+        <Company>AdrianAdamiakSolutions</Company>
+        <Copyright>Copyright 2021</Copyright>
+        <PackageTags>AdrianAdamiakSolutions, Analyzers, CodingRules</PackageTags>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" />
+        <AdditionalFiles Include="stylecop.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Asyncify" Version="0.9.7">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="MappingGenerator" Version="1.22.1.18" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Analyzers" Version="2.2.0" />
+        <PackageReference Include="SmartAnalyzers.CSharpExtensions.Annotations" Version="3.3.0" />
+        <PackageReference Include="SmartAnalyzers.MultithreadingAnalyzer" Version="1.1.31" />
+        <PackageReference Include="Meziantou.Analyzer" Version="1.0.570">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.9" />
+        <PackageReference Include="Microsoft.CodeAnalysis" Version="3.6.0" />
+        <PackageReference Include="Microsoft.Net.Compilers" Version="3.6.0" />
+        <PackageReference Include="Microsoft.Net.Compilers.Toolset" Version="3.6.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="16.8.55">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+</Project>
